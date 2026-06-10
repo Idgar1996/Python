@@ -4,11 +4,11 @@ import pyautogui
 # Segurança: Mova o mouse para o canto superior esquerdo da tela para PARAR o script
 pyautogui.FAILSAFE = True
 
+# Defina quantas fichar quer baixar nesta rodada(ex: 30 fichas)
+TOTAL_FICHAS = int(input("Insira o número de fichas para baixar: "))
+
 print("Script iniciado. Você tem 5 segundos para clicar em cima da primeira ficha da tabela...")
 time.sleep(5)
-
-# Defina quantas fichas quer baixar nesta rodada (ex: 30 fichas)
-TOTAL_FICHAS = 76 
 
 for i in range(TOTAL_FICHAS):
     print(f"Processando ficha {i+1} de {TOTAL_FICHAS}...")
