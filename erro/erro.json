@@ -1,0 +1,13 @@
+{
+    "1": {
+        "nome": "Alusim Esquadrias",
+        "erro": "Sistema não calcula os valores corretamente.",
+        "status": "aberto"
+    },
+
+    "2": {
+        "nome": "Hemp Softwares",
+        "erro": "Impressora não funciona",
+        "status": "fechado"
+    }
+}
