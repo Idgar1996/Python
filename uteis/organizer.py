@@ -3,7 +3,7 @@ import time
 
 regras_organizacao = {
     "imagens": [".jpeg", ".jpg", ".png", ".gif"],
-    "documentos": [".pdf", ".txt", ".docx", ".xlsx"],
+    "documentos": [".pdf", ".txt", ".docx", ".xlsx", ".pptx"],
     "compactados": [".zip", ".rar"],
     "executaveis": [".exe", ".msi"],
     "programacao": [".py", ".js", ".css", ".html", ".php", ".json", ]
@@ -22,7 +22,7 @@ def mapear_diretorio(caminho_alvo):
     time.sleep(2)
 
     contadores = {
-          ".jpeg": 0, ".jpg": 0, ".png": 0, ".gif": 0,
+          ".jpeg": 0, ".jpg": 0, ".png": 0, ".gif": 0, ".pptx": 0,
           ".pdf": 0, ".txt": 0, ".docx": 0, ".xlsx": 0,
           ".zip": 0, ".rar": 0, ".exe": 0, ".msi": 0,
           ".py": 0, ".js": 0, ".css": 0, ".html": 0,
