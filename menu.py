@@ -4,14 +4,14 @@ import subprocess
 
 # Lista de opções do menu: (Texto que aparece, Nome do arquivo .py)
 OPCOES = [
-    ("1. Conversão de Temperatura", "conversao_temperatura.py"),
-    ("2. Calculadora de Desconto", "desconto.py"),
-    ("3. Controle de Estoque", "estoque.py"),
-    ("4. Filtro de Idades", "lista_ages.py"),
-    ("5. Verificador de Maioridade", "maioridade.py"),
-    ("6. Verificador de Múltiplos", "multiplos.py"),
-    ("7. Par ou Ímpar", "parImpar.py"),
-    ("8. Testes Gerais", "media.py"),
+    ("1. Conversão de Temperatura", "matematica/conversao_temperatura.py"),
+    ("2. Calculadora de Desconto", "matematica/desconto.py"),
+    ("3. Controle de Estoque", "estoque/estoque.py"),
+    ("4. Filtro de Idades", "matematica/lista_idades.py"),
+    ("5. Verificador de Maioridade", "matematica/maioridade.py"),
+    ("6. Verificador de Múltiplos", "matematica/multiplos.py"),
+    ("7. Par ou Ímpar", "matematica/parImpar.py"),
+    ("8. Testes Gerais", "matematica/media.py"),
     ("9. Sair do Sistema", None)
 ]
 

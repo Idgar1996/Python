@@ -66,8 +66,16 @@ def mapear_diretorio(caminho_alvo):
 
                     try:
                         novo_caminho = pasta_destino / item.name
+                        
+                        # --- INÍCIO DA ALTERAÇÃO ---
+                        while novo_caminho.exists():
+                            print(f"\nAtenção: O arquivo '{novo_caminho.name}' já existe na pasta '{pasta_nome}'.")
+                            novo_nome = input(f"Digite um novo nome para '{item.name}' (inclua a extensão): ")
+                            novo_caminho = pasta_destino / novo_nome
+                        # --- FIM DA ALTERAÇÃO ---
+
                         item.rename(novo_caminho)
-                        print(f"Sucesso: arquivo {item.name} movido para a pasta {pasta_nome}")
+                        print(f"Sucesso: arquivo {item.name} movido para a pasta {pasta_nome} como {novo_caminho.name}")
                     except:
                         print(f"Não foi possível mover o item {item.name} para a pasta {pasta_nome}")
 

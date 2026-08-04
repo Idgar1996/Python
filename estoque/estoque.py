@@ -1,6 +1,6 @@
 import json
 
-with open("estoque.json", "r", encoding="UTF-8") as arq:
+with open("estoque/estoque.json", "r", encoding="UTF-8") as arq:
     itens = json.load(arq)
 
 def menu(acao):
@@ -12,8 +12,8 @@ def menu(acao):
         
     elif acao == "comprar":
         item_comprado = input("Digite o item comprado: ")    
-        quantidade_comprada = int(input("Digite a quantidade comprada: ")).strip().lower()
-        compra(item_comprado, quantidade_comprada)
+        quantidade_comprada = int(input("Digite a quantidade comprada: "))
+        compra(item_comprado, quantidade_comprada, itens)
         
     else:
         print("Opção inválida! Escolha somente entre as opções disponíveis!")
